@@ -19,11 +19,11 @@ const ExpenseList = ({ token, setExpenses, expenses }) => {
   }, [token, setExpenses]);
 
   if (loading) {
-    return <CircularProgress />; // Show a spinner while data is being fetched
+    return <CircularProgress />;
   }
 
   if (!Array.isArray(expenses)) {
-    return <div>No expenses available.</div>; // Handle case where expenses is not an array
+    return <div>No expenses available.</div>;
   }
 
   return (

@@ -1,16 +1,14 @@
 import React from 'react';
 import { Pie } from 'react-chartjs-2';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Typography } from '@mui/material';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'; // Import necessary components
 
-// Register Chart.js components
+// Register the chart components
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const SpendingChart = ({ expenses }) => {
-  // Getting unique categories from the expenses
   const categories = [...new Set(expenses.map(expense => expense.category))];
 
-  // Data for the Pie chart
   const data = {
     labels: categories,
     datasets: [
