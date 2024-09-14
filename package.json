@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@mui/material": "^6.1.0",
+    "@mui/system": "^6.1.0",
+    "@mui/utils": "^6.1.0",
+    "chart.js": "^2.9.4",
+    "react-chartjs-2": "^2.11.1"
+  }
+}
